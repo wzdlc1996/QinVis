@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	padding: 20px;
+}
+
+p {
+	margin: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.lzx-story {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	min-height: 420px;
+}
+
+.path-svg {
+	position: absolute;
+	min-height: 420px;
+}
+
+.china-map {
+	width: 100%;
+	height: 100%;
+	min-width: 550px;
+	overflow: auto;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	position: relative;
+	/* z-index: 1; */
+}
+
+.lzx-stories {
+	padding: 20px 10px;
+	width: 50%;
+	height: 100%;
+	min-width: 550px;
+	min-height: 420px;
+	overflow: auto;
+	position: absolute;
+	right: 0;
+}
+::-webkit-scrollbar {
+	background-color: #eee;
+	width: 10px;
+	height: 10px;
+	background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb {
+	background-color:#666;
+	border-radius: 5px;
+}
+
+.main{
+	width: 50%;
+	margin: 30px auto;
+}
+
+.time-axis{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.time-axis:before{
+	content: '';
+	position: absolute;
+	left: 117px;
+	top: 15px;
+	width: 1px;
+	height: 100%;
+	background-color: #E4E4E4;
+}
+.time-axis-period {
+}
+.time-axis-period-title {
+	padding-left: 150px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.time-axis-item{
+	list-style: none;
+	padding-left: 150px;
+	position: relative;
+	line-height: 45px;
+	font-size: 14px;
+	color: #141414;
+	line-height: 1.5;
+}
+.time-axis-achievement{
+	margin: 0;
+	cursor: pointer;
+}
+.time-axis-date{
+	width: 110px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 1.5;
+	color: #666;
+	cursor: pointer;
+}
+
+.time-axis-location {
+	line-height: 1.5;
+	margin: 15px 0;
+	cursor: pointer;
+}
+
+.time-axis-date span{
+	position: absolute;
+	right: -14px;
+	top: 3px;
+	display: block;
+	width: 13px;
+	height: 13px;
+	border: 1px solid #ccc;
+	border-radius: 100%;
+	background-color: #fff;
+	cursor: pointer;
+}
+.time-axis-date span:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 7px;
+	height: 7px;
+	margin: auto;
+	background-color: #ccc;
+	border: 1px solid #ccc;
+	border-radius: 100%;
+}
+
+.time-axis-item.active .time-axis-date span{
+	border-color: #48BEB2;
+}
+
+.time-axis-item.active .time-axis-date span:after{
+	background-color: #48BEB2;
+	border-color: #48BEB2;
+}
+
+.tooltip{
+	font-size:16px;
+	line-height: 20px;
+	padding: 0 5px;
+	height:auto;
+	position:absolute; 
+	border: 1px solid #000;
+	background-color:white;	
+}
+
+

@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body::-webkit-scrollbar {
+                    display: none;
+                    }
+
+body {
+	padding: 0px;
+}
+
+p {
+	margin: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.QinVis {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+}
+
+.TimeLineVis {
+	width: 100%;
+	height: 40%;
+
+}
+.AllMap {
+	width: 100%;
+	height: 60%;
+}
+
+.QinStory {
+	width: 50%;
+	height: 100%;
+	float: right;
+	overflow: auto;
+}
+
+.TimeLine {
+	width: 100%;
+	height: 100%;
+}
+
+
+.QinStory{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.QinStory:before{
+	content: '';
+	position: absolute;
+	left: 117px;
+	top: 15px;
+	width: 1px;
+	height: 100%;
+	background-color: #E4E4E4;
+}
+.TimeLineBlockTitle {
+	padding-left: 150px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.TimeLineBlockCont{
+	list-style: none;
+	padding-left: 150px;
+	position: relative;
+	line-height: 45px;
+	font-size: 14px;
+	color: #141414;
+	line-height: 1.5;
+	opacity: 30%;
+}
+
+.TimeLineBlockCont.active{
+	opacity: 100%;
+}
+
+.Points{
+	opacity: 0%;
+}
+.Points.active{
+	opacity: 100%;
+}
+
+.time-axis-achievement{
+	margin: 0;
+	cursor: pointer;
+}
+.TimeLineBlockTime{
+	width: 110px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 1.5;
+	color: #666;
+	cursor: pointer;
+}
+
+.TimeLineBlockTime span{
+	position: absolute;
+	right: -14px;
+	top: 3px;
+	display: block;
+	width: 13px;
+	height: 13px;
+	border: 1px solid #ccc;
+	border-radius: 100%;
+	background-color: #fff;
+	cursor: pointer;
+}
+.TimeLineBlockTime span:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 7px;
+	height: 7px;
+	margin: auto;
+	background-color: #ccc;
+	border: 1px solid #ccc;
+	border-radius: 100%;
+}
